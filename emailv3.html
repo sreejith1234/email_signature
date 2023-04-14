@@ -17,19 +17,17 @@
         </td>
     </tr>
     <tr>
-        <!-- ngIf: showField('photo') --><td ng-if="showField('photo')" width="120" style="padding-top: 22px;" class="ng-scope">
+        <td  width="120" style="padding-top: 22px;" class="ng-scope">
 
             <p style="padding: 0px; margin: 0px;">
                 <a href="http://www.ahimsa.global" target="_blank">
-        <img border="0" alt="Logo" width="90" style="max-width:90px; height:auto; border:0;" src="https://sreejith1234.github.io/email_signature/logo.svg"></a>
+        <img border="0" alt="Logo" width="90" style="max-width:90px; height:auto; border:0;" src="https://sreejith1234.github.io/email_signature/logo.png"></a>
             </p>
-        </td><!-- end ngIf: showField('photo') -->
+        </td>
         <td style="padding-top: 25px;">
-            <!-- ngIf: showField('phone') -->
-            <!-- ngIf: showField('mobile') --><p ng-if="showField('mobile')" style="padding-bottom: 2px; margin-bottom: 0px; padding-top: 0px; margin-top: 0px; line-height: 10pt; " class="ng-scope"><span style="font-size: 9pt; line-height: 10pt; color: #7a94cc; font-weight: bold;">M:</span> <span style="font-size: 9pt; line-height: 10pt; color: #101010" class="ng-binding">++32 121345323</span></p><!-- end ngIf: showField('mobile') -->
-            <!-- ngIf: showField('email') --><p ng-if="showField('email')" style="padding-bottom: 2px; margin-bottom: 0px; padding-top: 0px; margin-top: 0px; line-height: 10pt; " class="ng-scope"><span style="font-size: 9pt; line-height: 10pt; color: #7a94cc; font-weight: bold;">E:</span> <a href="mailto:melisa.doe@my-company.com" style="text-decoration: none; font-size: 9pt; line-height: 10pt;  color: #101010"><span style="text-decoration: none; font-size: 9pt; line-height: 10pt;  color: #101010" class="ng-binding">melisa.doe@my-company.com</span></a></p><!-- end ngIf: showField('email') -->
-            
-            <!-- ngIf: isAnyFieldEntered('company, address1, address2') --><p ng-if="isAnyFieldEntered('company, address1, address2')" style=" line-height: 10pt; padding-bottom: 2px; margin-bottom: 0px; padding-top: 0px; margin-top: 0px;" class="ng-scope">
+            <p ng-if="showField('mobile')" style="padding-bottom: 2px; margin-bottom: 0px; padding-top: 0px; margin-top: 0px; line-height: 10pt; " class="ng-scope"><span style="font-size: 9pt; line-height: 10pt; color: #7a94cc; font-weight: bold;">M:</span> <span style="font-size: 9pt; line-height: 10pt; color: #101010" class="ng-binding">++32 121345323</span></p>
+            <p ng-if="showField('email')" style="padding-bottom: 2px; margin-bottom: 0px; padding-top: 0px; margin-top: 0px; line-height: 10pt; " class="ng-scope"><span style="font-size: 9pt; line-height: 10pt; color: #7a94cc; font-weight: bold;">E:</span> <a href="mailto:melisa.doe@my-company.com" style="text-decoration: none; font-size: 9pt; line-height: 10pt;  color: #101010"><span style="text-decoration: none; font-size: 9pt; line-height: 10pt;  color: #101010" class="ng-binding">melisa.doe@my-company.com</span></a></p>
+            <p ng-if="isAnyFieldEntered('company, address1, address2')" style=" line-height: 10pt; padding-bottom: 2px; margin-bottom: 0px; padding-top: 0px; margin-top: 0px;" class="ng-scope">
                 <span style="font-size: 9pt;  line-height: 10pt; color: #7a94cc; font-weight: bold;">A:</span> 
                                 <!-- ngIf: showField('company') --><span ng-if="showField('company')" style="font-size: 9pt;  line-height: 10pt; color: #101010;" class="ng-binding ng-scope">Ahimsa Global<!-- ngIf: isAnyFieldEntered('address1, address2') --><span ng-if="isAnyFieldEntered('address1, address2')" class="ng-scope">,</span><!-- end ngIf: isAnyFieldEntered('address1, address2') --></span><!-- end ngIf: showField('company') --> 
                 <!-- ngIf: showField('address1') --><span ng-if="showField('address1')" style="font-size: 9pt;  line-height: 10pt; color: #101010" class="ng-binding ng-scope">24 Bilsthorpe Lane, RD 4</span><!-- end ngIf: showField('address1') --><!-- ngIf: showField('address1') --><span ng-if="showField('address1')" style="font-size: 9pt;  line-height: 10pt; color: #101010" class="ng-scope">, </span><!-- end ngIf: showField('address1') -->
