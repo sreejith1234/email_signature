@@ -1,0 +1,57 @@
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>Email Signature</TITLE>
+<META content="text/html; charset=utf-8" http-equiv="Content-Type">
+</HEAD>
+<BODY style="font-size: 10pt; font-family: Arial, sans-serif;">
+
+<table cellspacing="0" cellpadding="0" border="0" style="FONT-FAMILY: Arial, sans-serif; COLOR: #7a94cc;max-width:500px;" class="ng-scope">
+  <tbody>
+    <tr>
+        <td colspan="2" width="500" style="padding-bottom: 4px; border-bottom: 1px solid #dbdbdb;">
+            <span style="FONT-SIZE: 18pt; COLOR: #7a94cc; FONT-FAMILY: Arial, sans-serif;"><strong class="ng-binding">Melisa Doe</strong></span>
+            <!-- ngIf: isAnyFieldEntered('title, website') --><span ng-if="isAnyFieldEntered('title, website')" class="ng-scope"><br></span><!-- end ngIf: isAnyFieldEntered('title, website') -->
+            <!-- ngIf: showField('title') --><span ng-if="showField('title')" style="font-size: 10pt; color: #7a94cc;" class="ng-binding ng-scope">Consultant <!-- ngIf: showField('website') --><span ng-if="showField('website')" class="ng-scope"> | </span><!-- end ngIf: showField('website') --></span><!-- end ngIf: showField('title') -->
+            <!-- ngIf: showField('website') --><span ng-if="showField('website')" class="ng-scope">
+                <a href="http://www.ahimsa.global" target="_blank" rel="noopener" style="font-size: 10pt; color: #7a94cc !important; text-decoration:none ; font-weight: bold;"><span style="font-size: 10pt; color: #7a94cc !important; text-decoration:none ; font-weight: bold;" class="ng-binding">www.ahimsa.global</span></a>
+            </span><!-- end ngIf: showField('website') -->
+        </td>
+    </tr>
+    <tr>
+        <!-- ngIf: showField('photo') --><td ng-if="showField('photo')" width="120" style="padding-top: 22px;" class="ng-scope">
+            <p style="padding: 0px; margin: 0px;">
+        <img border="0" ng-src="https://ahimsa.global/logo.svg" alt="Photo" width="90" style="max-width:90px; height:auto; border:0;" src="https://ahimsa.global/logo.svg">
+            </p>
+        </td><!-- end ngIf: showField('photo') -->
+        <td style="padding-top: 25px;">
+            <!-- ngIf: showField('phone') -->
+            <!-- ngIf: showField('mobile') --><p ng-if="showField('mobile')" style="padding-bottom: 2px; margin-bottom: 0px; padding-top: 0px; margin-top: 0px; line-height: 10pt; " class="ng-scope"><span style="font-size: 9pt; line-height: 10pt; color: #7a94cc; font-weight: bold;">M:</span> <span style="font-size: 9pt; line-height: 10pt; color: #101010" class="ng-binding">++32 121345323</span></p><!-- end ngIf: showField('mobile') -->
+            <!-- ngIf: showField('email') --><p ng-if="showField('email')" style="padding-bottom: 2px; margin-bottom: 0px; padding-top: 0px; margin-top: 0px; line-height: 10pt; " class="ng-scope"><span style="font-size: 9pt; line-height: 10pt; color: #7a94cc; font-weight: bold;">E:</span> <a href="mailto:melisa.doe@ahimsa.global" style="text-decoration: none; font-size: 9pt; line-height: 10pt;  color: #101010"><span style="text-decoration: none; font-size: 9pt; line-height: 10pt;  color: #101010" class="ng-binding">melisa.doe@ahimsa.global</span></a></p><!-- end ngIf: showField('email') -->
+            
+            <!-- ngIf: isAnyFieldEntered('company, address1, address2') --><p ng-if="isAnyFieldEntered('company, address1, address2')" style=" line-height: 10pt; padding-bottom: 2px; margin-bottom: 0px; padding-top: 0px; margin-top: 0px;" class="ng-scope">
+                <span style="font-size: 9pt;  line-height: 10pt; color: #7a94cc; font-weight: bold;">A:</span> 
+                                <!-- ngIf: showField('company') --><span ng-if="showField('company')" style="font-size: 9pt;  line-height: 10pt; color: #101010;" class="ng-binding ng-scope">Ahimsa Global<!-- ngIf: isAnyFieldEntered('address1, address2') --><span ng-if="isAnyFieldEntered('address1, address2')" class="ng-scope">,</span><!-- end ngIf: isAnyFieldEntered('address1, address2') --></span><!-- end ngIf: showField('company') --> 
+                <!-- ngIf: showField('address1') --><span ng-if="showField('address1')" style="font-size: 9pt;  line-height: 10pt; color: #101010" class="ng-binding ng-scope">24 Bilsthorpe Lane, RD 4, </span><!-- end ngIf: showField('address1') --><!-- ngIf: showField('address1') --><span ng-if="showField('address1')" style="font-size: 9pt;  line-height: 10pt; color: #101010" class="ng-scope">, </span><!-- end ngIf: showField('address1') -->
+                <!-- ngIf: showField('address2') --><span style="font-size: 9pt;  line-height: 10pt; color: #101010" ng-if="showField('address2')" class="ng-binding ng-scope">Hamilton 3284.</span><!-- end ngIf: showField('address2') -->
+            </p><!-- end ngIf: isAnyFieldEntered('company, address1, address2') -->
+            
+            <p style="margin-bottom: 0px; padding-bottom: 0px; padding-top: 0px; margin-top: 4px;">
+                <!-- ngIf: showField('facebookURL') -->
+                <!-- ngIf: showField('twitterURL') -->
+                <!-- ngIf: showField('youtubeURL') -->
+                <!-- ngIf: showField('linkedinURL') -->
+                <!-- ngIf: showField('instagramURL') -->
+                <!-- ngIf: showField('pinterestURL') -->        
+            </p>
+        </td>
+    </tr>
+    <!-- ngIf: showField('banner') -->
+    <!-- ngIf: showField('disclaimer') --><tr ng-if="showField('disclaimer')" class="ng-scope">
+        <td colspan="2" style="padding-top:10px;">
+            <p style="font-size:7pt; line-height:8pt; COLOR: #959595; FONT-FAMILY: Arial, sans-serif;  text-align:justify;" class="ng-binding">∬ toward's better health outcomes through technology, innovation, data analytics &amp; predictive algorithm ∬</p>
+        </td>
+    </tr><!-- end ngIf: showField('disclaimer') -->
+  </tbody>
+</table>
+
+</BODY>
+</HTML>
